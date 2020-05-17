@@ -1,3 +1,6 @@
+import assert from "assert";
+import { getPageNums } from "../getPageNums";
+
 describe("ページネーションの表示をサポートする getPageNums 関数", () => {
   describe.each([
     [{ pageNums: 3, total: 8, windowSize: 5 }, [1, 2, 3, 4, 5]],

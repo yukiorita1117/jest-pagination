@@ -1,5 +1,5 @@
 import assert from "assert";
-import { getPageNums } from "../getPageNums";
+import { getPageNums } from "./getPageNums";
 
 describe("ページネーションの表示をサポートする getPageNums 関数", () => {
   describe.each([

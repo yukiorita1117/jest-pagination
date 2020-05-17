@@ -1,6 +1,5 @@
 import assert from "assert";
 
-​
 //共通の処理であるヘルパー関数
 class Paginator {
   windowSize: number;
@@ -9,7 +8,7 @@ class Paginator {
     this.windowSize = windowSize;
     this.totalPages = totalPages;
   }
- getWindow(pageNum: number) {
+  getWindow(pageNum: number) {
     // 1 から total までの配列を作る
     const s = pageNum - this.windowSize / 2 < 0;
     const e = pageNum + this.windowSize / 2 > this.totalPages;
@@ -34,10 +33,8 @@ class Paginator {
     return r;
   }
 }
-​
 describe("ページネーションの表示をサポートする Paginator クラス", () => {
   let paginator: Paginator;
-​
   describe("総ページ数 8, ウィンドウ幅 6 の Paginator の場合", () => {
     beforeEach(() => {
       paginator = new Paginator(6, 8);

@@ -12,12 +12,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/jest": "^24.0.23",
+    "@types/jest": "^24.9.1",
     "@types/marked": "^0.7.1",
     "next": "^9.1.5",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "ts-jest": "^24.2.0"
+    "ts-jest": "^26.0.0"
   },
   "devDependencies": {
     "jest": "^24.9.0"
